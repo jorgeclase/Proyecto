@@ -6,7 +6,8 @@ Este proyecto permite gestionar un catálogo de equipaciones de fútbol. Permite
 
 1. En ese proyecto podremos añadir nuevas equipaciones , eliminar las no deseadas , editar y mostrar todas las equipaciones disponibles en el catalogo
 2. Al ejecutar el programa se indicara que numero usar para realizar una accion o otra ej: El numero 1 te permitiria añadir una nueva equipacion al catalogo
-   DIAGRAMA ![image](https://github.com/user-attachments/assets/316a3b68-1de8-4b43-b441-1c4b36c19478)
+   DIAGRAMA
+   ![image](https://github.com/user-attachments/assets/316a3b68-1de8-4b43-b441-1c4b36c19478)
 
 5.  LicenciaApache 2.0
 
