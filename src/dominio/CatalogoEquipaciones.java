@@ -44,9 +44,14 @@ public class CatalogoEquipaciones {
             br = new BufferedReader(new FileReader(archivo));
             String linea;
             while ((linea = br.readLine()) != null) {
+                
                 String[] datos = linea.split(" \\| ");
-                Equipacion equipacion = new Equipacion(datos[0], datos[1], datos[2]);
-                equipaciones.add(equipacion);
+                if (datos.length >= 3) {
+                    Equipacion equipacion = new Equipacion(datos[0], datos[1], datos[2]);
+                    equipaciones.add(equipacion);
+                } else {
+                    System.out.println("Línea inválida: " + linea);
+                }
             }
         } catch (IOException e) {
             System.out.println("Error en cargar el archivo de equipaciones.");
@@ -58,6 +63,7 @@ public class CatalogoEquipaciones {
             }
         }
     }
+    
     
     private void guardarEquipaciones() {
         PrintWriter pw = null;
